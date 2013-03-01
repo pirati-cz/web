@@ -1,4 +1,7 @@
 web
 ===
 
-Kódování webu
+Kódování webu pirati.cz.
+
+Aktuální vzhled:
+![screenshot](screenshot.png)
