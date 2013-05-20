@@ -1,0 +1,167 @@
+html, body {
+     margin:0px;
+     padding:0px;
+}
+#page {
+     width:980px;
+     margin:auto;
+}
+#head {
+     margin-top:10px;
+     margin-bottom:10px;
+}
+#col-left {
+     float:left;
+     width:49%;
+     /*background-color:#f00;*/
+}
+#col-right {
+     float:right;
+     width:49%;
+     /*background-color:#0f0;*/
+}
+
+#headbox {
+     float:right;
+     padding-top:12px;
+     /*text-align:right;*/
+}
+
+#search {
+     margin-bottom:0px;
+}
+#search input {
+     border:solid 1px #000;
+     color:#000;
+}
+#newsletter {
+     /*padding-left:7%;*/
+}
+#newsletter input {
+     background-color:#000;
+     color:#fff;
+     border:solid 1px #000;
+     /*width:190px;*/
+     /*margin-left:15px;*/
+     /*width:92%;*/
+     /*margin-left:3%;*/
+     /*width:*/
+}
+
+.iblock {
+     margin-bottom:20px;
+}
+.iblock .content {
+     /*height:100px;*/
+}
+.iblock h6 {
+     margin:0px;
+     background-color:#ddd;
+     border-bottom:solid 2px #666;
+     padding:2px;
+     padding-left:5px;
+     color:#000;
+     font-size:1.2em;
+}
+.iblock.mo h6 {
+     background-color:#94dfff;
+     border-color:#009091;
+}
+.iblock.ao h6 {
+     background-color:#ecffb4;
+     border-color:#b4d455;
+}
+.iblock.fo h6 {
+     background-color:#f7dbb9;
+     border-color:#f7941d;
+}
+.iblock.you h6 {
+     background-color:#ffbcc3;
+     border-color:#bf1e2e;
+}
+.iblock .content {
+     padding-top:5px;
+}
+
+.iblock h6,
+.iblock.mo h6,
+.iblock.ao h6,
+.iblock.fo h6, 
+.iblock.you h6 {
+     background-color:#fff;
+}
+
+/* tz */
+#tz {
+     background-repeat:no-repeat;
+     min-height:180px;
+}
+#tz .tztxtblock {
+     background-color:#fff;
+     position:absolute;
+     height:50px;
+     opacity:0.9;
+     width:480px;
+     z-index:50;
+     margin-top:130px;
+}
+#tz h2 {
+     position:absolute;
+     font-size:1.2em;
+     float:left;
+     z-index:100;
+     line-height:1.2em;
+     width:480px;
+     padding:5px;
+     margin-top:132px;
+}
+
+/* kampane */
+.k1 {
+     float:right;
+}
+
+/*  --  */
+#news {
+     font-weight:bold;
+     color:#009091;
+}
+#news a {
+     color:#009091;
+}
+#news li {
+     margin-top:10px;
+}
+
+#calendar {
+     width:100%;
+     background-color:#fff;
+}
+#calendar td {
+     text-align:right;
+     background-color:#ecffb4;
+     padding:2px;
+     border:solid 2px #fff;
+}
+
+
+
+#indexmenu {
+     list-style:none;
+     margin:0px;
+}
+#indexmenu li {
+     float:left;
+     margin-right:11px;
+     margin-left:10px;
+}
+#indexmenu a {
+     display:block;
+     width:75px;
+     height:75px;
+     background-color:#ccc;
+     text-align:center;
+     font-size:0.9em;
+     font-weight:bold;
+}
+

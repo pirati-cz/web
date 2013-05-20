@@ -45,6 +45,107 @@
           <script type="text/javascript" charset="utf-8" src="/js/raphael-min.js"></script>
      </head>
      <body>
-          <p>titulka</p>
+          <div id="page">
+               <div id="head">
+                    <div id="headbox">
+                         <div id="search" class="input-append">
+                              <input type="text" name="search" placeholder="Vyhledávání...">
+                              <button class="btn"><i class="icon-search"></i></button>
+                         </div>
+<br>
+                         <div id="newsletter" class="input-append">
+                              <input type="text" name="newsletter" placeholder="Newsletter...">
+                              <button class="btn"><i class="icon-envelope"></i></button>
+                         </div>
+                    </div>
+                    <a href="/"><img src="/img/logo.png"></a>
+               </div>
+               <div id="main">
+                    <div id="col-left">
+                         <div class="iblock">
+                              <h6>Rozcestník</h6>
+                              <div class="content">
+                                   <ul id="indexmenu">
+                                        <li><a href="#"><img src="/img/icon0.png">O nás</a></li>
+                                        <li><a href="#"><img src="/img/icon0.png">Členství</a></li>
+                                        <li><a href="#"><img src="/img/icon0.png">Program</a></li>
+                                        <li><a href="#"><img src="/img/icon0.png">Regiony</a></li>
+                                        <li><a href="#"><img src="/img/icon0.png">Kontakt</a></li>
+                                   </ul>
+                                   <div class="clearfix">&nbsp;</div>
+                             </div>
+                         </div>
+
+                         <div class="iblock mo">
+                              <h6>Tiskové zprávy</h6>
+                              <div class="content">
+                                   <div id="tz" style="background-image:url(/img/tz.jpg);">
+                                        <h2>Pirátská strana vyzvala prezidenta ke zveřejnění dokumentů o amnestii</h2>
+                                        <div class="tztxtblock"></div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="iblock mo">
+                              <h6>Novinky</h6>
+                              <div class="content">
+                                   <ul id="news">
+                                        <li><a href="#">Stanovisko Pirátů k pokračujícím protestům proti KSČM v krajských radách &raquo;</a></li>
+                                        <li><a href="#">Nejcennější dokument v historii www &raquo;</a></li>
+                                        <li><a href="#">Ministerstvo životního prostředí a vláda ČR neplní své sliby. 8 let slibovaná a potřebná novela zákona o odpadech nebude &raquo;</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+
+                         <div class="iblock you">
+                              <h6>Youtube</h6>
+                              <div class="content">Lorem ipsum...</div>
+                         </div>
+
+                    </div>
+                    <div id="col-right">
+                         <div class="iblock mo">
+                              <h6>Aktuální kampaně</h6>
+                              <div class="content">
+                                   <a class="k1" href="#"><img src="/img/kampan1.png"></a>
+                                   <a class="k0" href="#"><img src="/img/kampan0.png"></a>
+                             </div>
+                         </div>
+                         <div class="iblock ao">
+                              <h6>Kalendář</h6>
+                              <div class="content">
+                                   <table id="calendar">
+                                        <tr>
+                                             <th>Po</th>
+                                             <th>Út</th>
+                                             <th>St</th>
+                                             <th>Čt</th>
+                                             <th>Pá</th>
+                                             <th>So</th>
+                                             <th>Ne</th>
+                                        </tr>
+                                        <?php for($i=0; $i<5; $i++): ?>
+                                        <tr>
+                                             <?php for($j=1; $j<=7; $j++): ?>
+                                                  <?php $d = ($j+($i*7)); ?>
+                                                  <?php if($d<=31): ?>
+                                                       <td><?php echo $d; ?></td>
+                                                  <?php else: ?>
+                                                       <td>&nbsp;</td>
+                                                  <?php endif; ?>
+                                             <?php endfor; ?>
+                                        </tr>
+                                        <?php endfor; ?>
+                                   </table>
+                              </div>
+                         </div>
+                         <div class="iblock fo">
+                              <h6>Transparentní účet</h6>
+                              <div class="content">Lorem ipsum...</div>
+                         </div>
+                    </div>
+               </div>
+          </div>
      </body>
 </html>
+
