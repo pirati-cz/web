@@ -1,3 +1,14 @@
+<?php
+
+ob_start();
+if(isset($_GET['novinky'])){
+     include('novinky.php');
+} else {
+     include('titulka.php');
+}
+$content = ob_get_clean();
+
+?>
 <!DOCTYPE html>
 <html lang="cs" dir="ltr">
      <head>
@@ -8,7 +19,7 @@
 		<meta name="robots" content="index,follow">
 		<meta name="keywords" content="portal">
           <meta name="description" content="Cílem Pirátské strany je na prvním místě prosazování základního práva člověka na svobodné šíření informací a striktní ochranu soukromí občana. Pirátský programProjektyČlenstvíKontakt">
-          <title>Hlavní stránka - Pirati.CZ</title>
+          <title><?php echo $title; ?> - Pirati.CZ</title>
           <!-- social metas -->
           <meta property="og:title" content="Hlavní stránka - Pirati.CZ">
 		<meta property="og:type" content="website">
@@ -43,8 +54,63 @@
           <script type="text/javascript" charset="utf-8" src="/js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="/js/bootstrap.min.js"></script>
           <script type="text/javascript" charset="utf-8" src="/js/raphael-min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/js/script.js"></script>
      </head>
      <body>
+          <div class="navbar navbar-fixed-top">
+               <div class="navbar-inner">
+                    <ul id="pagebar" class="nav">
+                         <li class="dropdown">
+                              <a href="#web" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/topmenu_web.png" alt="web">&nbsp;Web<b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="#login">Přihlásit</a></li>
+                                   <li class="divider"></li>
+                                   <li class="dropdown-submenu">
+                                        <a href="#page">Stránka</a>
+                                        <ul class="dropdown-menu">
+                                             <li><a href="edit">Upravit stránku</a></li>
+                                             <li><a href="history">Starší verze</a></li>
+                                             <li><a href="permlink">Permanentní odkaz</a></li>
+                                             <li><a href="subscribe">Odebírat e-mailem změny</a></li>
+                                             <li><a href="cite">Citovat</a></li>
+                                        </ul>
+                                   </li>
+                                   <li class="divider"></li>
+                                   <li><a href="#page">Správa webu</a></li>
+                                   <li class="dropdown-submenu">
+                                        <a href="#page">Vzhled</a>
+                                        <ul class="dropdown-menu">
+                                             <li><a href="#001">Výchozí</a></li>
+                                             <li><a href="#002">steampunk</a></li>
+                                             <li><a href="#003">MLP</a></li>
+                                             <li><a href="#004">kopy</a></li>
+                                             <li><a href="#005">9000</a></li>
+                                      </ul>
+                                   </li>
+                                   <li class="divider"></li>
+                                   <li><a href="#index">Index stránek</a></li>
+                                   <li><a href="#recent">Poslední úpravy</a></li>
+                                   <li><a href="#help">Nápověda</a></li>
+                              </ul>
+                         </li>
+                         <li><a href="#forum"><img src="/img/topmenu_forum.png" alt="fórum">&nbsp;Fórum</a></li>
+                         <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
+                         <li><a href="#novinky"><img src="/img/topmenu_news.gif" alt="zprávy">&nbsp;Zprávy</a></li>
+                         <li><a href="#calendar"><img src="/img/topmenu_calendar.gif" alt="kalendář">&nbsp;Kalendář</a></li>
+                         <li><a href="#images"><img src="/img/topmenu_foto.png" alt="obrázky">&nbsp;Obrázky</a></li>
+                         <li><a href="#videa"><img src="/img/topmenu_youtube.png" alt="videa">&nbsp;Videa</a></li>
+                         <li id="share" style="float:right" class="dropdown btn-info">
+                              <a href="#login" class="dropdown-toggle" data-toggle="dropdown">Sdílet!<b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="#">Facebook</a></li>
+                                   <li><a href="#">Twitter</a></li>
+                                   <li><a href="#">Ostatní...</a></li>
+                              </ul>
+                         </li>
+                         <li style="float:right"><a href="#login"><img src="/img/topmenu_user.png" alt="uživatel">&nbsp;Nepřihlášený</a></li>
+                    </ul>
+               </div>
+          </div>
           <div id="page">
                <div id="head">
                     <div id="headbox">
@@ -52,99 +118,26 @@
                               <input type="text" name="search" placeholder="Vyhledávání...">
                               <button class="btn"><i class="icon-search"></i></button>
                          </div>
-<br>
-                         <div id="newsletter" class="input-append">
-                              <input type="text" name="newsletter" placeholder="Newsletter...">
-                              <button class="btn"><i class="icon-envelope"></i></button>
-                         </div>
                     </div>
-                    <a href="/"><img src="/img/logo.png"></a>
+                    <a href="/"><img src="/img/logo.png" alt="Logo"></a>
                </div>
                <div id="main">
-                    <div id="col-left">
-                         <div class="iblock">
-                              <h6>Rozcestník</h6>
-                              <div class="content">
-                                   <ul id="indexmenu">
-                                        <li><a href="#"><img src="/img/icon0.png">O nás</a></li>
-                                        <li><a href="#"><img src="/img/icon0.png">Členství</a></li>
-                                        <li><a href="#"><img src="/img/icon0.png">Program</a></li>
-                                        <li><a href="#"><img src="/img/icon0.png">Regiony</a></li>
-                                        <li><a href="#"><img src="/img/icon0.png">Kontakt</a></li>
-                                   </ul>
-                                   <div class="clearfix">&nbsp;</div>
-                             </div>
-                         </div>
-
-                         <div class="iblock mo">
-                              <h6>Tiskové zprávy</h6>
-                              <div class="content">
-                                   <div id="tz" style="background-image:url(/img/tz.jpg);">
-                                        <h2>Pirátská strana vyzvala prezidenta ke zveřejnění dokumentů o amnestii</h2>
-                                        <div class="tztxtblock"></div>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <div class="iblock mo">
-                              <h6>Novinky</h6>
-                              <div class="content">
-                                   <ul id="news">
-                                        <li><a href="#">Stanovisko Pirátů k pokračujícím protestům proti KSČM v krajských radách &raquo;</a></li>
-                                        <li><a href="#">Nejcennější dokument v historii www &raquo;</a></li>
-                                        <li><a href="#">Ministerstvo životního prostředí a vláda ČR neplní své sliby. 8 let slibovaná a potřebná novela zákona o odpadech nebude &raquo;</a></li>
-                                   </ul>
-                              </div>
-                         </div>
-
-                         <div class="iblock you">
-                              <h6>Youtube</h6>
-                              <div class="content">Lorem ipsum...</div>
-                         </div>
-
-                    </div>
-                    <div id="col-right">
-                         <div class="iblock mo">
-                              <h6>Aktuální kampaně</h6>
-                              <div class="content">
-                                   <a class="k1" href="#"><img src="/img/kampan1.png"></a>
-                                   <a class="k0" href="#"><img src="/img/kampan0.png"></a>
-                             </div>
-                         </div>
-                         <div class="iblock ao">
-                              <h6>Kalendář</h6>
-                              <div class="content">
-                                   <table id="calendar">
-                                        <tr>
-                                             <th>Po</th>
-                                             <th>Út</th>
-                                             <th>St</th>
-                                             <th>Čt</th>
-                                             <th>Pá</th>
-                                             <th>So</th>
-                                             <th>Ne</th>
-                                        </tr>
-                                        <?php for($i=0; $i<5; $i++): ?>
-                                        <tr>
-                                             <?php for($j=1; $j<=7; $j++): ?>
-                                                  <?php $d = ($j+($i*7)); ?>
-                                                  <?php if($d<=31): ?>
-                                                       <td><?php echo $d; ?></td>
-                                                  <?php else: ?>
-                                                       <td>&nbsp;</td>
-                                                  <?php endif; ?>
-                                             <?php endfor; ?>
-                                        </tr>
-                                        <?php endfor; ?>
-                                   </table>
-                              </div>
-                         </div>
-                         <div class="iblock fo">
-                              <h6>Transparentní účet</h6>
-                              <div class="content">Lorem ipsum...</div>
-                         </div>
-                    </div>
+                    <?php echo $content; ?>
                </div>
+          </div>
+          <div id="bottom">
+               <span style="-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -khtml-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); display: inline-block; font-size:1em">&copy;</span>
+               Piráti, <?php echo date('Y') ?>. Všechna práva vyhlazena. Sdílejte a nechte ostatní sdílet za stejných podmínek. <a href="#podminky">Podmínky použití</a>.
+<?php /*               <div>
+                    <div class="form-search">
+                         <span id="sharing">
+                              Tady se načtou socky...
+                         </span>
+                         <div class="input-append">
+                              <a href="#sharing" class="btn btn-danger btn-mini">Sdílet &raquo;</a>
+                         </div>
+                    </div>
+                    </div> */ ?>
           </div>
      </body>
 </html>
