@@ -61,7 +61,7 @@ html, body {
 .iblock h6 {
      margin:0px;
      background-color:#eee;
-     border-bottom:solid 2px #666;
+     border-bottom:solid 2px black;
      padding:2px;
      padding-left:5px;
      color:#000;
@@ -89,23 +89,26 @@ html, body {
 .iblock.mo h6 {
      /*background-color:#94dfff;*/
      background-color:#dff6ff;
-     /*background-color:#f2fbff;*/
-     border-color:#009091;
+     /*background-color:#f2fbff;
+     border-color:#009091;*/
 }
 .iblock.ao h6 {
-     /*background-color:#ecffb4;*/
+     /*background-color:#ecffb4;
+     border-color:#b4d455;*/
      background-color:#f5ffd7;
-     border-color:#b4d455;
+     
 }
 .iblock.fo h6 {
-     /*background-color:#f7dbb9;*/
+     /*background-color:#f7dbb9;
+     border-color:#f7941d;*/
      background-color:#fff4e6;
-     border-color:#f7941d;
+     
 }
 .iblock.you h6 {
-     /*background-color:#ffbcc3;*/
+     /*background-color:#ffbcc3;
+     border-color:#bf1e2e;*/
      background-color:#ffebed;
-     border-color:#bf1e2e;
+     
 }
 .iblock .content {
      padding-top:10px;
@@ -157,7 +160,10 @@ html, body {
      color:#009091;
 }
 #news a {
-     color:#009091;
+     color:rgb(5, 105, 105);;
+}
+a {
+    color:black;
 }
 #news li {
      margin-top:10px;

@@ -18,7 +18,7 @@ $content = ob_get_clean();
           <meta name="generator" content="DokuWiki">
 		<meta name="robots" content="index,follow">
 		<meta name="keywords" content="portal">
-          <meta name="description" content="Cílem Pirátské strany je na prvním místě prosazování základního práva člověka na svobodné šíření informací a striktní ochranu soukromí občana. Pirátský programProjektyČlenstvíKontakt">
+          <meta name="description" content="Cílem Pirátské strany je na prvním místě prosazování základního práva člověka na svobodné šíření informací a striktní ochranu soukromí občana.">
           <title><?php echo $title; ?> - Pirati.CZ</title>
           <!-- social metas -->
           <meta property="og:title" content="Hlavní stránka - Pirati.CZ">
@@ -46,6 +46,10 @@ $content = ob_get_clean();
           <link rel="stylesheet" media="all" type="text/css" href="/css/bootstrap.min.css">
           <link rel="stylesheet" media="all" type="text/css" href="/css/all.css">
           <link rel="stylesheet" media="all" type="text/css" href="/css/print.css">
+          <link rel="stylesheet" media="all" type="text/css" href="/css/all.css">
+          <link rel="stylesheet" media="all" type="text/css" href="/css/muj.css">
+          
+          
           <!-- javscripts -->
           <script type="text/javascript"><!--//--><![CDATA[//><!--
 		     var NS='';var SIG=' --- //[[vaclav.malek@pirati.cz|Václav Málek (Vaclav Malek)]] 01.03.2013 02:31//';var JSINFO = {"id":"portal","namespace":""};
@@ -57,7 +61,7 @@ $content = ob_get_clean();
           <script type="text/javascript" charset="utf-8" src="/js/script.js"></script>
      </head>
      <body>
-          <div class="navbar navbar-fixed-top">
+          <div class="navbar navbar-fixed-top navbar-flat">
                <div class="navbar-inner">
                     <ul id="pagebar" class="nav">
                          <li class="dropdown">
@@ -119,7 +123,7 @@ $content = ob_get_clean();
                               <button class="btn"><i class="icon-search"></i></button>
                          </div>
                     </div>
-                    <a href="/"><img src="/img/logo.png" alt="Logo"></a>
+                    <a href="/"><img src="/img/logo.png" alt="Logo" id="logo"></a>
                </div>
                <div id="main">
                     <?php echo $content; ?>
