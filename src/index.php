@@ -115,6 +115,9 @@ $content = ob_get_clean();
                     </ul>
                </div>
           </div>
+          
+          <div id="vlnka"></div>
+          
           <div id="page">
                <div id="head">
                     <div id="headbox">

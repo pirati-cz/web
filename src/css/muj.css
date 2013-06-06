@@ -3,11 +3,13 @@
 }
 
 .navbar-flat .navbar-inner {
-    background-color: #bf1e2e;
+background-color: black;
     background-image: none;
     box-shadow: white 0px 0px 0px;
     border: 0px;
 }
+
+
 
 .navbar-flat .nav>li>a {
     text-shadow:none;
@@ -15,27 +17,30 @@
 }
 
 .navbar .nav>li>a:focus, .navbar .nav>li>a:hover {
-    color: white;
     text-decoration: none;
-    background-color: #917dae;
+    background-color: white;
+     color:black;
 }
 
 
 .navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle {
-    color: black;
     text-decoration: none;
-    background-color: #917dae;
+    
+      background-color: white;
+      color:red;
 }
 
 #head {
-    height:40px;
+    height:140px;
 }
 
-#logo {
-    height: 130px;
-    z-index: 3;
-    position: relative;
-    left: -60px;
-    top: -8px;
-    
+#vlnka {
+    background-image: url("/img/vlnka6.png");
+      height: 100px;
+      background-repeat: repeat-x;
+      position: absolute;
+      width: 100%;
+      top: 130px;
+      z-index: -20;
+      background-position-x: center;
 }

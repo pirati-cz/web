@@ -136,31 +136,7 @@ if(isset($_GET['icons'])){
 }
 
 ?>
-<div class="iblock mo">
-      
-      <div class="content">
-           <div id="tz" class="carousel slide">
-                <ol class="carousel-indicators">
-                     <?php foreach($tzs as $num=>$tz): ?> 
-                          <li data-target="#tz" data-slide-to="<?php echo $num; ?>"<?php echo ($num==0?' class="active"':'') ?>></li>
-                     <?php endforeach; ?>
-                </ol>
-                <div class="carousel-inner">
-                     <?php foreach($tzs as $num=>$tz): ?>
-                          <div class="item<?php echo ($num==0?' active':''); ?>">
-                               <a href="#tz<?php echo $num; ?>">
-                                    <img src="/img/<?php echo $tz['img']; ?>" alt="blabla">
-                               </a>
-                               <div class="carousel-caption">
-                                    <h4><a href="#tz<?php echo $num; ?>"><?php echo $tz['title']; ?></a></h4>
-                               </div>
-                          </div>
-                     <?php endforeach; ?>
-                </div>
-           </div>
-      </div>
- </div>
- 
+
 <div id="col-left">
     
     
@@ -181,6 +157,33 @@ if(isset($_GET['icons'])){
      </div>
 
      
+     <div class="iblock mo">
+               <h6>
+                    <span class="right"><a title="RSS" href="#rss-tz"><img src="/img/rss.png" alt="rss"></a></span>
+                    <a href="#tz">Tiskové zprávy <span>Všechny tiskové zprávy &raquo;</span></a>
+               </h6>
+               <div class="content">
+                    <div id="tz" class="carousel slide">
+                         <ol class="carousel-indicators">
+                              <?php foreach($tzs as $num=>$tz): ?> 
+                                   <li data-target="#tz" data-slide-to="<?php echo $num; ?>"<?php echo ($num==0?' class="active"':'') ?>></li>
+                              <?php endforeach; ?>
+                         </ol>
+                         <div class="carousel-inner">
+                              <?php foreach($tzs as $num=>$tz): ?>
+                                   <div class="item<?php echo ($num==0?' active':''); ?>">
+                                        <a href="#tz<?php echo $num; ?>">
+                                             <img src="/img/<?php echo $tz['img']; ?>" alt="blabla">
+                                        </a>
+                                        <div class="tz-content">
+                                             <h4><a href="#tz<?php echo $num; ?>"><?php echo $tz['title']; ?></a></h4>
+                                        </div>
+                                   </div>
+                              <?php endforeach; ?>
+                         </div>
+                    </div>
+               </div>
+          </div>
 
      <div class="iblock mo">
           <h6>
