@@ -35,7 +35,7 @@ background-color: black;
 }
 
 #vlnka {
-    height: 150px;top:55px; background-image:url("img/vlnka7.png")
+    height: 150px;top:55px; background-image:url("/img/vlnka7.png");
       background-repeat: repeat-x;
       position: absolute;
       width: 100%;
