@@ -35,12 +35,10 @@ background-color: black;
 }
 
 #vlnka {
-    background-image: url("/img/vlnka6.png");
-      height: 100px;
+    height: 150px;top:55px; background-image:url("img/vlnka7.png")
       background-repeat: repeat-x;
       position: absolute;
       width: 100%;
-      top: 130px;
       z-index: -20;
       background-position-x: center;
 }
