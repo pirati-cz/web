@@ -2,38 +2,44 @@ html, body {
      font-family: Arial, Helvetica, sans-serif;
      margin:0px;
      padding:0px;
-     padding-top:20px;
+     /*padding-top:20px;*/
 }
 #page,
-#pagebar,
+/*#pagebar,*/
 #bottom {
      width:980px;
+     /*min-width:480px;*/
      margin:auto;
 }
-#pagebar {
-     float:none;
+@media (min-width: 797px){
+     body {
+          padding-top:40px;
+     }
 }
-#pagebar > li {
+/*#pagebar {*/
+/*float:none;*/
+/*}*/
+/*#pagebar > li {*/
      /*width:122px;*/
-}
-#pagebar img {
-     margin-top:-3px;
-}
+/*}*/
+/*#pagebar img {*/
+/*margin-top:-3px;*/
+/*}*/
 #head {
      margin-top:10px;
      margin-bottom:10px;
 }
 #col-left {
-     float:left;
-     width:49%;
+     /*float:left;*/
+     /*width:49%;*/
 }
 #col-right {
-     float:right;
-     width:49%;
+     /*float:right;*/
+     /*width:49%;*/
 }
 #bottom {
      clear:both;
-     border-top:solid 2px #aaa;
+     border-top:so/lid 2px #aaa;
      margin-bottom:10px;
      font-size:0.8em;
      
@@ -272,7 +278,7 @@ html, body {
 }
 #indexmenu li {
      float:left;
-     margin-right:11px;
+     margin-right:10px;
      margin-left:10px;
 }
 #indexmenu a {

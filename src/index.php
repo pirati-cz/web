@@ -33,7 +33,8 @@ $content = ob_get_clean();
 		<meta property="og:image" content="http://www.pirati.cz/_media/static/sdilet.gif">
 		<meta property="og:image" content="http://static.pirati.cz/piznam/plachta_bez_okraje.png">
 		<meta property="og:description" content="Cílem Pirátské strany je na prvním místě prosazování základního práva člověka na svobodné šíření informací a striktní ochranu soukromí občana. Pirátský programProjektyČlenstvíKontakt">
-		<meta property="fb:admins" content="1734211895">
+          <meta property="fb:admins" content="1734211895">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <!-- links -->
           <link href="/favicon.png" rel="icon" type="image/png">
           <link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Pirati.CZ">
@@ -42,8 +43,8 @@ $content = ob_get_clean();
           <link rel="canonical" href="https://www.pirati.cz/portal">
           <link rel="alternate" type="application/rss+xml" title="Tiskové zprávy a stanoviska České pirátské strany" href="http://www.pirati.cz/piznam/feed.php?mode=blogtng&amp;blog=default&amp;ns=tiskove-zpravy&amp;linkto=current&amp;content=html">
           <!-- stylesheets -->
-		<link rel="stylesheet" media="all" type="text/css" href="/css/bootstrap-responsive.min.css">
-          <link rel="stylesheet" media="all" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" media="all" type="text/css" href="/css/bootstrap.min.css">
+          <link rel="stylesheet" media="all" type="text/css" href="/css/bootstrap-responsive.min.css">
           <link rel="stylesheet" media="all" type="text/css" href="/css/all.css">
           <link rel="stylesheet" media="all" type="text/css" href="/css/print.css">
           <!-- javscripts -->
@@ -57,58 +58,69 @@ $content = ob_get_clean();
           <script type="text/javascript" charset="utf-8" src="/js/script.js"></script>
      </head>
      <body>
-          <div class="navbar navbar-fixed-top">
+          <div class="navbar navbar-fixed-top" id="pagebar">
                <div class="navbar-inner">
-                    <ul id="pagebar" class="nav">
-                         <li class="dropdown">
-                              <a href="#web" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/topmenu_web.png" alt="web">&nbsp;Web<b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                                   <li><a href="#login">Přihlásit</a></li>
-                                   <li class="divider"></li>
-                                   <li class="dropdown-submenu">
-                                        <a href="#page">Stránka</a>
+                    <div class="container">
+                         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                         </a>
+                         <div class="nav-collapse collapse">
+                              <ul class="nav">
+                                   <li class="dropdown">
+                                        <a href="#web" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/topmenu_web.png" alt="web">&nbsp;Web<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                             <li><a href="edit">Upravit stránku</a></li>
-                                             <li><a href="history">Starší verze</a></li>
-                                             <li><a href="permlink">Permanentní odkaz</a></li>
-                                             <li><a href="subscribe">Odebírat e-mailem změny</a></li>
-                                             <li><a href="cite">Citovat</a></li>
+                                             <li><a href="#login">Přihlásit</a></li>
+                                             <li class="divider"></li>
+                                             <li class="dropdown-submenu">
+                                                  <a href="#page">Stránka</a>
+                                                  <ul class="dropdown-menu">
+                                                       <li><a href="edit">Upravit stránku</a></li>
+                                                       <li><a href="history">Starší verze</a></li>
+                                                       <li><a href="permlink">Permanentní odkaz</a></li>
+                                                       <li><a href="subscribe">Odebírat e-mailem změny</a></li>
+                                                       <li><a href="cite">Citovat</a></li>
+                                                  </ul>
+                                             </li>
+                                             <li class="divider"></li>
+                                             <li><a href="#page">Správa webu</a></li>
+                                             <li class="dropdown-submenu">
+                                                  <a href="#page">Vzhled</a>
+                                                  <ul class="dropdown-menu">
+                                                       <li><a href="#001">Výchozí</a></li>
+                                                       <li><a href="#002">steampunk</a></li>
+                                                       <li><a href="#003">MLP</a></li>
+                                                       <li><a href="#004">kopy</a></li>
+                                                       <li><a href="#005">9000</a></li>
+                                                </ul>
+                                             </li>
+                                             <li class="divider"></li>
+                                             <li><a href="#index">Index stránek</a></li>
+                                             <li><a href="#recent">Poslední úpravy</a></li>
+                                             <li><a href="#help">Nápověda</a></li>
                                         </ul>
                                    </li>
-                                   <li class="divider"></li>
-                                   <li><a href="#page">Správa webu</a></li>
-                                   <li class="dropdown-submenu">
-                                        <a href="#page">Vzhled</a>
+                                   <li><a href="#forum"><img src="/img/topmenu_forum.png" alt="fórum">&nbsp;Fórum</a></li>
+                                   <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
+                                   <li><a href="#novinky"><img src="/img/topmenu_news.gif" alt="zprávy">&nbsp;Zprávy</a></li>
+                                   <li><a href="#calendar"><img src="/img/topmenu_calendar.gif" alt="kalendář">&nbsp;Kalendář</a></li>
+                                   <li><a href="#images"><img src="/img/topmenu_foto.png" alt="obrázky">&nbsp;Obrázky</a></li>
+                                   <li><a href="#videa"><img src="/img/topmenu_youtube.png" alt="videa">&nbsp;Videa</a></li>
+                              </ul>
+                              <ul class="nav pull-right">
+                                   <li><a href="#login"><img src="/img/topmenu_user.png" alt="uživatel">&nbsp;Nepřihlášený</a></li>
+                                   <li id="share" class="dropdown btn-info">
+                                        <a href="#login" class="dropdown-toggle" data-toggle="dropdown">Sdílet!<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                             <li><a href="#001">Výchozí</a></li>
-                                             <li><a href="#002">steampunk</a></li>
-                                             <li><a href="#003">MLP</a></li>
-                                             <li><a href="#004">kopy</a></li>
-                                             <li><a href="#005">9000</a></li>
-                                      </ul>
+                                             <li><a href="#">Facebook</a></li>
+                                             <li><a href="#">Twitter</a></li>
+                                             <li><a href="#">Ostatní...</a></li>
+                                        </ul>
                                    </li>
-                                   <li class="divider"></li>
-                                   <li><a href="#index">Index stránek</a></li>
-                                   <li><a href="#recent">Poslední úpravy</a></li>
-                                   <li><a href="#help">Nápověda</a></li>
                               </ul>
-                         </li>
-                         <li><a href="#forum"><img src="/img/topmenu_forum.png" alt="fórum">&nbsp;Fórum</a></li>
-                         <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
-                         <li><a href="#novinky"><img src="/img/topmenu_news.gif" alt="zprávy">&nbsp;Zprávy</a></li>
-                         <li><a href="#calendar"><img src="/img/topmenu_calendar.gif" alt="kalendář">&nbsp;Kalendář</a></li>
-                         <li><a href="#images"><img src="/img/topmenu_foto.png" alt="obrázky">&nbsp;Obrázky</a></li>
-                         <li><a href="#videa"><img src="/img/topmenu_youtube.png" alt="videa">&nbsp;Videa</a></li>
-                         <li id="share" style="float:right" class="dropdown btn-info">
-                              <a href="#login" class="dropdown-toggle" data-toggle="dropdown">Sdílet!<b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                                   <li><a href="#">Facebook</a></li>
-                                   <li><a href="#">Twitter</a></li>
-                                   <li><a href="#">Ostatní...</a></li>
-                              </ul>
-                         </li>
-                         <li style="float:right"><a href="#login"><img src="/img/topmenu_user.png" alt="uživatel">&nbsp;Nepřihlášený</a></li>
-                    </ul>
+                         </div>
+                    </div>
                </div>
           </div>
           <div id="page">
@@ -121,7 +133,7 @@ $content = ob_get_clean();
                     </div>
                     <a href="/"><img src="/img/logo.png" alt="Logo"></a>
                </div>
-               <div id="main">
+               <div id="main" class="row-fluid">
                     <?php echo $content; ?>
                </div>
           </div>

@@ -200,7 +200,7 @@ function initYoutube(){
                var item = json.data.items[i];
                var minutes = Math.floor(parseInt(item.duration)/60);
                var seconds = parseInt(item.duration)-minutes*60;
-               jQuery("#youtube ul").append('<li><div class="time">'+minutes+':'+seconds+'</div><a href="'+item.player["default"]+'"><img src="'+(item.thumbnail.sqDefault).replace('http','https')+'" alt="'+item.title+'" title="'+item.description+'" /></a><br /><a href="'+item.player["default"]+'" title="'+item.description+'">'+item.title+'</a></li>');
+               jQuery("#youtube ul").append('<li><div class="time">'+minutes+':'+seconds+'</div><a href="'+item.player["default"]+'"><img src="'+(item.thumbnail.sqDefault).replace('http:','https:')+'" alt="'+item.title+'" title="'+item.description+'" /></a><br /><a href="'+item.player["default"]+'" title="'+item.description+'">'+item.title+'</a></li>');
           }
      }
 

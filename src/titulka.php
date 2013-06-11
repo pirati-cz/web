@@ -136,7 +136,7 @@ if(isset($_GET['icons'])){
 }
 
 ?>
-<div id="col-left">
+<div id="col-left" class="span6">
      <div class="iblock">
           <h6><a href="#map">Rozcestník <span>Mapa webu &raquo;</span></a></h6>
           <div class="content">
@@ -199,7 +199,7 @@ if(isset($_GET['icons'])){
      </div>
 
 </div>
-<div id="col-right">
+<div id="col-right" class="span6">
      <div class="iblock mo">
           <h6><a href="#camp">Aktuální kampaně <span>Všechny kampaně &raquo;</span></a></h6>
           <div class="content">
