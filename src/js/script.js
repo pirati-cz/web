@@ -16,7 +16,28 @@ $(document).ready(function(){
 
      // init sharing
      //initSharing();
+
+     // init search help
+     initSearch();
 });
+
+function initSearch(){
+     $('#search input').popover({
+          trigger: 'focus',
+          placement: 'bottom',
+          container: 'body',
+          html: true,
+          /*delay: { hide: 5000 },*/
+          title: 'Nápověda',
+          content: function(){
+               var c = '<div class="helpbox"><strong>@slovo</strong> - zavináč hledá ve jmenném prostoru "slovo"<br><br>';
+               c += '<strong>"slovo 2"</strong> - díky uvozovkám hledá přesný výraz "slovo 2"<br><br>';
+               c += '<strong>slo*</strong> - hvězdička nahradí část slova<br><br>';
+               c += '<strong>-slovo</strong> - mínus odebere výsledky které obsahují "slovo"<br><br></div>';
+               return c;
+          }
+     });
+}
 
 function initSharing(){
      var share = false;
@@ -48,7 +69,6 @@ function initCrmap(){
                title: 'Rychlá volba regionu',
                content: function(){
                     return '<div id="crmap"></div>';
-                    //return initSVGMap();
                }
           });
           $(this).popover('show');

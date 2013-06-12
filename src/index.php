@@ -120,12 +120,16 @@ $content = ob_get_clean();
           <div id="page">
                <div id="head">
                     <div id="headbox">
-                         <div id="search" class="input-append">
+                         <div id="search" class="input-append visible-desktop">
                               <input type="text" name="search" placeholder="Vyhledávání...">
                               <button class="btn"><i class="icon-search"></i></button>
                          </div>
                     </div>
                     <a href="/"><img src="/img/logo.png" alt="Logo"></a>
+                    <div id="search-small" class="input-append hidden-desktop">
+                         <input type="text" name="search" placeholder="Vyhledávání...">
+                         <button class="btn"><i class="icon-search"></i></button>
+                    </div>
                </div>
                <div id="main" class="row-fluid">
                     <?php echo $content; ?>
