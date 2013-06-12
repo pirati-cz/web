@@ -104,20 +104,14 @@ $content = ob_get_clean();
                                    <li><a href="#forum"><img src="/img/topmenu_forum.png" alt="fórum">&nbsp;Fórum</a></li>
                                    <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
                                    <li><a href="#novinky"><img src="/img/topmenu_news.gif" alt="zprávy">&nbsp;Zprávy</a></li>
-                                   <li><a href="#calendar"><img src="/img/topmenu_calendar.gif" alt="kalendář">&nbsp;Kalendář</a></li>
                                    <li><a href="#images"><img src="/img/topmenu_foto.png" alt="obrázky">&nbsp;Obrázky</a></li>
                                    <li><a href="#videa"><img src="/img/topmenu_youtube.png" alt="videa">&nbsp;Videa</a></li>
+                                   <li><a href="#facebook"><img src="/img/topmenu_facebook.png" alt="facebook">&nbsp;Facebook</a></li>
+                                   <li><a href="#twitter"><img src="/img/topmenu_twitter.png" alt="twitter">&nbsp;Twitter</a></li>
+                                   <li><a href="#gplus"><img src="/img/topmenu_gplus.png" alt="gplus">&nbsp;Google</a></li>
                               </ul>
                               <ul class="nav pull-right">
                                    <li><a href="#login"><img src="/img/topmenu_user.png" alt="uživatel">&nbsp;Nepřihlášený</a></li>
-                                   <li id="share" class="dropdown btn-info">
-                                        <a href="#login" class="dropdown-toggle" data-toggle="dropdown">Sdílet!<b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                             <li><a href="#">Facebook</a></li>
-                                             <li><a href="#">Twitter</a></li>
-                                             <li><a href="#">Ostatní...</a></li>
-                                        </ul>
-                                   </li>
                               </ul>
                          </div>
                     </div>

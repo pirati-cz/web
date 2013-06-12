@@ -7,11 +7,11 @@ html, body {
 #page,
 /*#pagebar,*/
 #bottom {
-     width:980px;
+     max-width:980px;
      /*min-width:480px;*/
      margin:auto;
 }
-@media (min-width: 797px){
+@media (min-width: 1199px){
      body {
           padding-top:40px;
      }
@@ -32,10 +32,12 @@ html, body {
 #col-left {
      /*float:left;*/
      /*width:49%;*/
+     min-width:475px;
 }
 #col-right {
      /*float:right;*/
      /*width:49%;*/
+     min-width:475px;
 }
 #bottom {
      clear:both;
@@ -60,6 +62,7 @@ html, body {
 
 .iblock {
      margin-bottom:20px;
+     width:480px;
 }
 .iblock .content {
      /*height:100px;*/

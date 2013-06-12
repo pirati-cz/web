@@ -196,6 +196,7 @@ if(isset($_GET['icons'])){
      <div class="iblock you">
           <h6><a href="#youtube">Youtube videa <span>Youtube kanál &raquo;</span></a></h6>
           <div id="youtube" class="content"><ul></ul></div>
+          <div class="clearfix"></div>
      </div>
 
 </div>
