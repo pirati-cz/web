@@ -356,24 +356,6 @@ html, body {
      color:#bf1e2e;
 }
 
-#share .caret {
-     border-top-color: #fff;
-     border-bottom-color: #fff;
-}
-#share > a {
-     font-weight:bold;
-     color:#fff;
-     text-shadow:0 1px 0 #000;
-}
-#share.open > a {
-     color:#000;
-     text-shadow:0 1px 0 #fff;
-}
-#share.open .caret {
-     border-top-color: #777;
-     border-bottom-color: #777;
-}
-
 #moneyservices {
      float:right;
      padding-top:10px;

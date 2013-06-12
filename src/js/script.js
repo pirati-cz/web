@@ -14,9 +14,6 @@ $(document).ready(function(){
      // cr map
      initCrmap();
 
-     // init sharing
-     //initSharing();
-
      // init search help
      initSearch();
 });
@@ -36,23 +33,6 @@ function initSearch(){
                c += '<strong>-slovo</strong> - mínus odebere výsledky které obsahují "slovo"<br><br></div>';
                return c;
           }
-     });
-}
-
-function initSharing(){
-     var share = false;
-     $('a[href="#sharing"]').click(function(){
-          var s = $('#sharing');
-          if(share){
-               
-          } else {
-               s.css('display','inline-block');
-//               alert($('#share').width());
-//               s.show();
-
-               s.css('width','0px');
-          }
-          share = !share;
      });
 }
 
@@ -171,7 +151,7 @@ function initEvents(){
           $(this).popover({
                title: title,
                trigger: 'manual',
-               placement: 'left',
+               placement: 'bottom',
                container: 'body',
                html: true,
                content: function(){
