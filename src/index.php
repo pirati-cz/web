@@ -101,6 +101,7 @@ $content = ob_get_clean();
                                              <li><a href="#help">Nápověda</a></li>
                                         </ul>
                                    </li>
+                                   <li><a href="#chat"><img src="/img/topmenu_chat.png" alt="chat">&nbsp;Chat</a></li>
                                    <li><a href="#forum"><img src="/img/topmenu_forum.png" alt="fórum">&nbsp;Fórum</a></li>
                                    <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
                                    <li><a href="#novinky"><img src="/img/topmenu_news.gif" alt="zprávy">&nbsp;Zprávy</a></li>
