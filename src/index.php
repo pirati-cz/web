@@ -17,7 +17,7 @@ $content = ob_get_clean();
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <meta name="generator" content="DokuWiki">
 		<meta name="robots" content="index,follow">
-		<meta name="keywords" content="portal">
+		<meta name="keywords" content="Piráti, Pirates, politika, politická strana, Česká Pirátská strana, copyright, OSA, open-source, svoboda, přímá demokracie">
           <meta name="description" content="Cílem Pirátské strany je na prvním místě prosazování základního práva člověka na svobodné šíření informací a striktní ochranu soukromí občana. Pirátský programProjektyČlenstvíKontakt">
           <title><?php echo $title; ?> - Pirati.CZ</title>
           <!-- social metas -->
@@ -25,16 +25,8 @@ $content = ob_get_clean();
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="http://www.pirati.cz/portal">
 		<meta property="og:image" content="http://static.pirati.cz/piznam/logo.png">
-		<meta property="og:image" content="http://www.pirati.cz/_media/icons/rss_yellow.jpeg">
-		<meta property="og:image" content="https://www.pirati.cz/_media/tiskove-zpravy/logo_svobodna_hudba.png?w=380">
-		<meta property="og:image" content="http://www.pirati.cz/_media/icons/rss_yellow.jpeg">
-		<meta property="og:image" content="https://www.pirati.cz/_media/stanoviska/kopacky106.jpg?w=380">
-		<meta property="og:image" content="http://www.pirati.cz/_media/icons/rss_yellow.jpeg">
-		<meta property="og:image" content="http://www.pirati.cz/_media/static/sdilet.gif">
-		<meta property="og:image" content="http://static.pirati.cz/piznam/plachta_bez_okraje.png">
 		<meta property="og:description" content="Cílem Pirátské strany je na prvním místě prosazování základního práva člověka na svobodné šíření informací a striktní ochranu soukromí občana. Pirátský programProjektyČlenstvíKontakt">
           <meta property="fb:admins" content="1734211895">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <!-- links -->
           <link href="/favicon.png" rel="icon" type="image/png">
           <link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Pirati.CZ">
@@ -103,8 +95,15 @@ $content = ob_get_clean();
                                    </li>
                                    <li><a href="#chat"><img src="/img/topmenu_chat.png" alt="chat">&nbsp;Chat</a></li>
                                    <li><a href="#forum"><img src="/img/topmenu_forum.png" alt="fórum">&nbsp;Fórum</a></li>
-                                   <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
                                    <li><a href="#novinky"><img src="/img/topmenu_news.gif" alt="zprávy">&nbsp;Zprávy</a></li>
+                                   <li class="dropdown">
+                                        <a href="#po-zapoj_se" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/topmenu_po.gif" alt="zapoj se">&nbsp;Zapoj se<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                             <li><a href="#po-zapoj_se">Zapoj se</a></li>
+                                             <li><a href="#po-ukoly">Úkoly</a></li>
+                                        </ul>
+                                   </li>
+                                   <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
                                    <li><a href="#images"><img src="/img/topmenu_foto.png" alt="obrázky">&nbsp;Obrázky</a></li>
                                    <li><a href="#videa"><img src="/img/topmenu_youtube.png" alt="videa">&nbsp;Videa</a></li>
                                    <li><a href="#facebook"><img src="/img/topmenu_facebook.png" alt="facebook">&nbsp;Facebook</a></li>

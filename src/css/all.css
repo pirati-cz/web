@@ -8,6 +8,9 @@ html, body {
      max-width:980px;
      margin:auto;
 }
+#pagebar.navbar .nav>li>a {
+     padding-left:10px;
+}
 @media (min-width: 1199px){
      body {
           padding-top:40px;
