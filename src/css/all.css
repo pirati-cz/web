@@ -9,7 +9,7 @@ html, body {
      margin:auto;
 }
 #pagebar.navbar .nav>li>a {
-     padding-left:10px;
+     padding:10px 10px 10px;
 }
 @media (min-width: 1199px){
      body {

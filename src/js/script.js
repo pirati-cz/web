@@ -200,8 +200,10 @@ function initYoutube(){
                var item = json.data.items[i];
                var minutes = Math.floor(parseInt(item.duration)/60);
                var seconds = parseInt(item.duration)-minutes*60;
-               jQuery("#youtube ul").append('<li><div class="time">'+minutes+':'+seconds+'</div><a href="'+item.player["default"]+'"><img src="'+(item.thumbnail.sqDefault).replace('http:','https:')+'" alt="'+item.title+'" title="'+item.description+'" /></a><br /><a href="'+item.player["default"]+'" title="'+item.description+'">'+item.title+'</a></li>');
+               jQuery("#youtube ul").append('<li><div class="time">'+minutes+':'+seconds+'</div><a class="html5lightbox" href="'+item.player["default"]+'"><img src="'+(item.thumbnail.sqDefault).replace('http:','https:')+'" alt="'+item.title+'" title="'+item.description+'" /></a><br /><a href="'+item.player["default"]+'" title="'+item.description+'">'+item.title+'</a></li>');
           }
+          
+          $('<script></script>').attr('type', 'text/javascript').attr('src', '/js/html5lightbox.js').appendTo(jQuery('head'));
      }
 
      $('<script></script>').attr('type', 'text/javascript').attr('src', 'https://gdata.youtube.com/feeds/api/users/CeskaPiratskaStrana/uploads?v=2&alt=jsonc&prettyprint=true&max-results=3&callback=initPirateVideos').appendTo(jQuery('head'));
