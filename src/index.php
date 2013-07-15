@@ -63,8 +63,6 @@ $content = ob_get_clean();
                                    <li class="dropdown">
                                         <a href="#web" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/topmenu_web.png" alt="web">&nbsp;Web<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                             <li><a href="#login">Přihlásit</a></li>
-                                             <li class="divider"></li>
                                              <li class="dropdown-submenu">
                                                   <a href="#page">Stránka</a>
                                                   <ul class="dropdown-menu">
@@ -116,7 +114,12 @@ $content = ob_get_clean();
                                    </li>
                               </ul>
                               <ul class="nav pull-right">
-                                   <li><a href="#login"><img src="/img/topmenu_user.png" alt="uživatel">&nbsp;Nepřihlášený</a></li>
+                                   <li class="dropdown">
+                                        <a href="#login" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/topmenu_user.png" alt="uživatel">&nbsp;Nepřihlášený<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                             <li><a href="#login">Přihlásit</a></li>    
+                                        </ul>
+                                   </li>
                               </ul>
                          </div>
                     </div>
