@@ -104,11 +104,16 @@ $content = ob_get_clean();
                                         </ul>
                                    </li>
                                    <li><a href="#shop"><img src="/img/topmenu_shop.png" alt="obchod">&nbsp;Obchod</a></li>
-                                   <li><a href="#images"><img src="/img/topmenu_foto.png" alt="obrázky">&nbsp;Obrázky</a></li>
-                                   <li><a href="#videa"><img src="/img/topmenu_youtube.png" alt="videa">&nbsp;Videa</a></li>
-                                   <li><a href="#facebook"><img src="/img/topmenu_facebook.png" alt="facebook">&nbsp;Facebook</a></li>
-                                   <li><a href="#twitter"><img src="/img/topmenu_twitter.png" alt="twitter">&nbsp;Twitter</a></li>
-                                   <li><a href="#gplus"><img src="/img/topmenu_gplus.png" alt="gplus">&nbsp;Google</a></li>
+                                   <li class="dropdown">
+                                        <a href="#pirati-v-síti" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/topmenu_con.png" alt="piráti v síti">&nbsp;Piráti v síti<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                             <li><a href="#images"><img src="/img/topmenu_foto.png" alt="obrázky">&nbsp;Obrázky</a></li>
+                                             <li><a href="#videa"><img src="/img/topmenu_youtube.png" alt="videa">&nbsp;Videa</a></li>
+                                             <li><a href="#facebook"><img src="/img/topmenu_facebook.png" alt="facebook">&nbsp;Facebook</a></li>
+                                             <li><a href="#twitter"><img src="/img/topmenu_twitter.png" alt="twitter">&nbsp;Twitter</a></li>
+                                             <li><a href="#gplus"><img src="/img/topmenu_gplus.png" alt="gplus">&nbsp;Google</a></li>
+                                        </ul>
+                                   </li>
                               </ul>
                               <ul class="nav pull-right">
                                    <li><a href="#login"><img src="/img/topmenu_user.png" alt="uživatel">&nbsp;Nepřihlášený</a></li>
