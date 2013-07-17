@@ -50,6 +50,7 @@ $content = ob_get_clean();
           <script type="text/javascript" charset="utf-8" src="/js/script.js"></script>
      </head>
      <body>
+          <div class="dokuwiki">
           <div class="navbar navbar-fixed-top" id="pagebar">
                <div class="navbar-inner">
                     <div class="container">
@@ -156,6 +157,7 @@ $content = ob_get_clean();
                          </div>
                     </div>
                     </div> */ ?>
+          </div>
           </div>
      </body>
 </html>
