@@ -1,4 +1,4 @@
 web
 ===
 
-Kódování webu pirati.cz.
+Main (dokuwiki) template pirati.cz.
