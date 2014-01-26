@@ -4,8 +4,6 @@ body {
   color: Black;
 }
 
-div.head {display: none !important;}
-
 table {
   font-size: 100%;
   padding: 0;
@@ -231,3 +229,8 @@ table.inline td {
 #pagebar {
      display:none;
 }
+
+#head {
+  display: none !important;
+}
+
