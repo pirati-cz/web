@@ -1,9 +1,10 @@
-
 body {
   font: 10pt "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
   background-color: White;
   color: Black;
 }
+
+div.head {display: none !important;}
 
 table {
   font-size: 100%;
