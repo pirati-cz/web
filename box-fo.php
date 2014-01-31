@@ -48,14 +48,22 @@ if((time()-$data->timestamp)>$updateInterval){
      $data->balance += $json_termin->accountStatement->info->closingBalance;
      $data->balance = number_format($data->balance,2,',',' ');
 
-     $ts = $json->accountStatement->transactionList->transaction;
-     foreach($ts as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_main_acc']; $ts[$k] = $v; }
-     $ts_michalek = $json_michalek->accountStatement->transactionList->transaction;
-     foreach($ts_michalek as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_michalek_acc']; $ts_michalek[$k] = $v; }
-     $ts_spor = $json_spor->accountStatement->transactionList->transaction;
-     foreach($ts_spor as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_sporici_acc']; $ts_spor[$k] = $v; }
-     $ts_termin = $json_termin->accountStatement->transactionList->transaction;
-     foreach($ts_termin as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_termin_acc']; $ts_termin[$k] = $v; }
+     if(!is_null($json->accountStatement->transactionList)){
+          $ts = $json->accountStatement->transactionList->transaction;
+          foreach($ts as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_main_acc']; $ts[$k] = $v; }
+     } else $ts = array();
+     if(!is_null($json_michalek->accountStatement->transactionList)){
+          $ts_michalek = $json_michalek->accountStatement->transactionList->transaction;
+          foreach($ts_michalek as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_michalek_acc']; $ts_michalek[$k] = $v; }
+     } else $ts_michalek = array();
+     if(!is_null($json_spor->accountStatement->transactionList)){
+          $ts_spor = $json_spor->accountStatement->transactionList->transaction;
+          foreach($ts_spor as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_sporici_acc']; $ts_spor[$k] = $v; }
+     } else $ts_spor = array();
+     if(!is_null($json_termin->accountStatement->transactionList)){
+          $ts_termin = $json_termin->accountStatement->transactionList->transaction;
+          foreach($ts_termin as $k=>$v){ $v->account = $conf['tpl_box-fo_fio_termin_acc']; $ts_termin[$k] = $v; }
+     } else $ts_termin = array();
 
      $all_trans = array_merge($ts,$ts_michalek,$ts_spor,$ts_termin);
      foreach($all_trans as $trans){
