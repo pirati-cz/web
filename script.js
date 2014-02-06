@@ -1,4 +1,5 @@
 /* DOKUWIKI:include bootstrap.min.js */
+/* DOKUWIKI:include jquery.color.js */
 /* DOKUWIKI:include jquery.cookie.js */
 /* DOKUWIKI:include jquery.cycle2.min.js */
 /* DOKUWIKI:include raphael-min.js */
@@ -57,7 +58,7 @@ function initTop(){
      //
      var dacl = jQuery.cookie('dokuwiki_acl');
      if(dacl=='show') jQuery('#dokuwiki_acl').show();
-     jQuery('#dokuwiki_acl_button').click(function(){
+     jQuery('a[href="#dokuwiki_acl"]').click(function(){
           dacl = jQuery.cookie('dokuwiki_acl');
           if(dacl=='show'){
                jQuery.cookie('dokuwiki_acl','hide');

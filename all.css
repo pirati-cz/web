@@ -901,3 +901,95 @@ div.dokuwiki .wrap_big-green1 a[disabled] {
   *background-color: #499249;
 }
 
+div.dokuwiki .wrap_navrh {
+     margin: 5px auto;
+     width: 84% !important;
+     min-height: 70px;
+     clear: both;
+     vertical-align: middle;
+     border-collapse: collapse;
+     padding: 7px 15px 10px 90px;
+     background-position: 20px 20px;
+     background-repeat: no-repeat;
+     border-radius: 10px 10px 10px 10px;
+     overflow:hidden;
+}
+div.dokuwiki .wrap_navrh .wrap_hlasovani {
+     margin-left:-90px;width:100% !important;
+}
+div.dokuwiki .wrap_predloha {
+     background-color: rgb(240, 240, 240);
+     background-image: url("/_media/templates/predloha.png?w=50");
+}
+div.dokuwiki .wrap_zmena {
+     background-color: rgb(240, 240, 240);
+     background-image: url("/_media/templates/zmena.png?w=50");
+}
+div.dokuwiki .wrap_usneseni {
+     background-color: rgb(230, 230, 230);
+     background-image: url("/_media/templates/usneseni.png?w=50");
+}
+div.dokuwiki .wrap_porad {
+     background-color: rgb(221, 255, 221);
+     background-image: url("/_media/kontact_todo.png?w=50");
+}
+div.dokuwiki .wrap_lide {
+     background-color: rgb(240, 240, 240);
+     background-image: url("/_media/ao/navody/volebni_komise.png?w=50");
+}
+div.dokuwiki .wrap_hlasovani {
+     background-image: url("/_media/templates/graf.png?w=46");
+     background-color: rgb(230, 230, 230);
+     margin: 5px auto;
+     width: 84% !important;
+     min-height: 70px;
+     clear: both;
+     vertical-align: middle;
+     border-collapse: collapse;
+     padding: 7px 15px 10px 90px;
+     background-position: 20px 20px;
+     background-repeat: no-repeat;
+     border-radius: 10px 10px 10px 10px;
+     overflow:hidden;
+}
+div.dokuwiki .wrap_ukol {
+     background-color: rgb(240, 240, 240);
+     margin: 5px auto;
+     width: 95% !important;
+     min-height: 70px;
+     clear: both;
+     vertical-align: middle;
+     border-collapse: collapse;
+     padding: 7px 15px 10px 15px;
+     border-radius: 10px 10px 10px 10px;
+     overflow:hidden;
+}
+div.dokuwiki .wrap_schvaleno {
+     background-image: url("/_media/zakony/pro.png?w=46");
+     background-color: rgb(221, 255, 221);
+}
+div.dokuwiki .wrap_zamitnuto {
+     background-image: url("/_media/zakony/proti.png?w=46");
+     background-color: rgb(255, 221, 221);
+}
+div.dokuwiki .wrap_neschvaleno {
+     background-image: url("/_media/zakony/zdrzeni.png?w=46");
+}
+div.dokuwiki div.wrap_navrh div.wrap_hlasovani dd.level1 {float:left !important; margin:0px !important;}
+div.dokuwiki div.wrap_navrh div.wrap_hlasovani  {margin-bottom:0px; background-color:transparent;}
+div.dokuwiki div.wrap_navrh div.wrap_schvaleno  {background-color:transparent;}
+div.dokuwiki div.wrap_navrh div.wrap_zamitnuto  {background-color:transparent;}
+div.dokuwiki div.wrap_navrh div.wrap_neschvaleno  {background-color:transparent;}
+div.dokuwiki div.wrap_navrh div.wrap_schvaleno dd.level1 {float:left !important; margin:0px !important;}
+div.dokuwiki div.wrap_navrh div.wrap_zamitnuto dd.level1 {float:left !important; margin:0px !important;}
+div.dokuwiki div.wrap_navrh div.wrap_neschvaleno dd.level1 {float:left !important; margin:0px !important;}
+div.dokuwiki div.wrap_hlasovani div.dd, div.wrap_hlasovani dd.level1 {display:inline !important;}
+div.dokuwiki div.wrap_hlasovani dt.level1 {float:left !important; clear:left !important;width:120px !important;margin:0px !important;}
+div.dokuwiki div.wrap_hlasovani dd.level1 {float:left !important; width:420px;margin:0px !important;}
+div.dokuwiki div.wrap_hlasovani a:link,
+div.dokuwiki div.wrap_hlasovani a:hover {
+     text-decoration:none !important
+}
+div.dokuwiki div.wrap_hlasovani dl + p {padding-top:10px;overflow:auto;width:100%;}
+div.dokuwiki div.wrap_vedeni {padding-left:110px;}
+
