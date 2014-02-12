@@ -72,7 +72,7 @@ setlocale(LC_TIME,'cs_CZ.utf8');
 
           <?php /*old includehook/ @include(dirname(__FILE__).'/meta.html') */ ?>
           
-          <?php if(isset($_GET['dev'])): ?>
+          <?php if(time()<1392158999 and !isset($_COOKIE['layout-tdwpb'])): ?>
                <?php include('sublayouts/layout_tdwfb_head.php'); ?>
           <?php endif; ?>
      </head>
@@ -90,14 +90,14 @@ setlocale(LC_TIME,'cs_CZ.utf8');
 
 </script>
 
-<?php if(isset($_GET['dev'])): ?>
+<?php if(time()<1392158999 and !isset($_COOKIE['layout-tdwpb'])): ?>
      <?php include('sublayouts/layout_tdwfb.php'); ?>
 <?php endif; ?>
 
           <div class="dokuwiki">
  
                <?php $_tpl_navbar_class = '';  include('navbar.php'); ?>
-               <?php if(isset($_GET['dev'])): $_tpl_navbar_class = ' navbar-inverse layout-tdwpb-bar'; ?>
+               <?php if(time()<1392158999 and !isset($_COOKIE['layout-tdwpb'])): $_tpl_navbar_class = ' navbar-inverse layout-tdwpb-bar'; ?>
                     <?php include('navbar.php'); ?>
                <?php endif; ?>
 

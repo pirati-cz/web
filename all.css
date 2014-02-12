@@ -598,6 +598,10 @@ div.dokuwiki #main #news {
      margin-left:20px;
 }
 
+/* BOX campaign */
+#campaign img {
+    margin:0px;
+}
 
 /* BOX calendar */
 #calendar {
@@ -899,7 +903,65 @@ div.dokuwiki .wrap_big-green1 a[disabled] {
   text-decoration: none;
   background-color: #51a351;
   *background-color: #499249;
+  background-image:none;
 }
+
+div.dokuwiki .wrap_green1 a {
+     display:inline-block;
+     *display: inline;
+     margin-bottom: 0;
+     *margin-left: .3em;
+     line-height: 20px;
+     text-align: center;
+     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+     vertical-align: middle;
+     cursor: pointer;
+     border: 1px solid #cccccc;
+     *border: 0;
+     border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+     border-bottom-color: #b3b3b3;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     border-radius: 4px;
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+     *zoom: 1;
+     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     padding: 4px 12px;
+     font-size: 14px;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+     border-radius: 6px;
+     color: #ffffff !important;
+     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+     background-color: #5bb75b;
+     *background-color: #51a351;
+     background-image: -moz-linear-gradient(top, #85c226, #51a351);
+     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#85c226), to(#51a351));
+     background-image: -webkit-linear-gradient(top, #85c226, #51a351);
+     background-image: -o-linear-gradient(top, #85c226, #51a351);
+     background-image: linear-gradient(to bottom, #85c226, #51a351);
+     background-repeat: repeat-x;
+     border-color: #51a351 #51a351 #387038;
+     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff85c226', endColorstr='#ff51a351', GradientType=0);
+     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+div.dokuwiki .wrap_green1 a:hover,
+div.dokuwiki .wrap_green1 a:focus,
+div.dokuwiki .wrap_green1 a:active,
+div.dokuwiki .wrap_green1 a.active,
+div.dokuwiki .wrap_green1 a.disabled,
+div.dokuwiki .wrap_green1 a[disabled] {
+  text-decoration: none;
+  background-color: #51a351;
+  *background-color: #499249;
+  background-image:none;
+}
+
 
 div.dokuwiki .wrap_navrh {
      margin: 5px auto;
