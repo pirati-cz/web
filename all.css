@@ -598,6 +598,10 @@ div.dokuwiki #main #news {
      margin-left:20px;
 }
 
+/* BOX campaign */
+#campaign img {
+    margin:0px;
+}
 
 /* BOX calendar */
 #calendar {
