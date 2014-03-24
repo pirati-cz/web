@@ -111,6 +111,14 @@ div.dokuwiki table input {
      padding:1px;
 }
 
+div.dokuwiki fieldset {
+    width:auto;
+    text-align:initial;
+    border:none;
+    padding:initial;
+    margin:auto;
+}
+
 /* toc */
 div.dokuwiki #main ul.toc {
      padding-left:0px;
