@@ -138,7 +138,7 @@ function translate_month($monthName){
                <a href="#rss-events" title="RSS"><img src="<?php echo DOKU_TPL; ?>/images/rss.png" alt="rss"></a>
                <a href="#filter-events" title="Filtr"><img src="<?php echo DOKU_TPL; ?>/images/filter.png" alt="filtr"></a>
           </span> -->
-          <?php /*<a href="<?php echo wl('udalosti'); ?>">*/?>Události<!--  <span>Všechny události &raquo;</span> </a>-->
+          <a href="http://kalendar.pirati.cz">Události <span>Všechny události &raquo;</span> </a>
      </h6>
      <!---
      <div id="filter">
