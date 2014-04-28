@@ -81,6 +81,36 @@ div.dokuwiki span.user {
      color:#600;
 }
 
+div.dokuwiki a.btn:link,
+div.dokuwiki a.btn:visited,
+div.dokuwiki a.btn:hover {
+    color:#000;
+    text-decoration:none;
+}
+div.dokuwiki a.btn-primary:link,
+div.dokuwiki a.btn-primary:visited,
+div.dokuwiki a.btn-info:link,
+div.dokuwiki a.btn-info:visited,
+div.dokuwiki a.btn-success:link,
+div.dokuwiki a.btn-success:visited,
+div.dokuwiki a.btn-warning:link,
+div.dokuwiki a.btn-warning:visited,
+div.dokuwiki a.btn-danger:link,
+div.dokuwiki a.btn-danger:visited,
+div.dokuwiki a.btn-inverse:link,
+div.dokuwiki a.btn-inverse:visited {
+    color:#fff;
+}
+
+div.dokuwiki option:disabled {
+    background-color:#ddd;
+    /*color:#fff;*/
+}
+
+div.dokuwiki .alert.alert-error ul li {
+    color:#b94a48;
+}
+
 /***** dokuwiki main content *****/
 div.dokuwiki #main ul {
      margin-left:0px;
@@ -117,6 +147,14 @@ div.dokuwiki fieldset {
     border:none;
     padding:initial;
     margin:auto;
+}
+
+div.error {
+    background-image:none;
+    border:none;
+    padding-left:0px;
+    padding-top:2px;
+    padding-bottom:2px;
 }
 
 /* toc */
@@ -1025,8 +1063,25 @@ div.dokuwiki .wrap_big-orange1 a[disabled] {
   *background-color: #f89406;
   background-image:none;
 }
+/**/
+div.dokuwiki .wrap_labelimportant {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #999; 
+    background-color:#b94a48;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 
-
+/**/
 div.dokuwiki .wrap_navrh {
      margin: 5px auto;
      width: 84% !important;
