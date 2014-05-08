@@ -36,6 +36,7 @@
                                                                       <li class="dropdown-submenu">
                                                                            <a href="<?php echo wl('regiony:jiznimorava'); ?>">KS Jihomoravský kraj</a>
                                                                            <ul class="dropdown-menu">
+                                                                                <li><a href="<?php echo wl('regiony:jiznimorava:slovacko'); ?>">MS Slovácko</a></li>
                                                                                 <li><a href="<?php echo wl('regiony:jiznimorava:znojmo'); ?>">MS Znojmo</a></li>
                                                                            </ul>
                                                                       </li>
