@@ -388,6 +388,10 @@ table th.rightalign { text-align: right;  }
      font-size:0.85em;
 }
 
+.shareaholic-canvas {
+    margin-top:4px;
+}
+
 .iblock {
      margin-bottom:20px;
      /*width:475px;*/
