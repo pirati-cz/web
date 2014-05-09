@@ -122,6 +122,25 @@ setlocale(LC_TIME,'cs_CZ.utf8');
                                         <div id="qsearch__out" class="ajax_qsearch JSpopup"></div>
                                    </form>
                               </div>
+                              <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='6607543'></div>
+                              <script type="text/javascript">
+                                //<![CDATA[
+                                (function() {
+                                    var shr = document.createElement('script');
+                                    shr.setAttribute('data-cfasync', 'false');
+                                    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+                                    shr.type = 'text/javascript'; shr.async = 'true';
+                                    shr.onload = shr.onreadystatechange = function() {
+                                        var rs = this.readyState;
+                                        if (rs && rs != 'complete' && rs != 'loaded') return;
+                                        var site_id = '359d7b420eceb3c42363cd712e8141e8';
+                                        try { Shareaholic.init(site_id); } catch (e) {}
+                                    };
+                                    var s = document.getElementsByTagName('script')[0];
+                                    s.parentNode.insertBefore(shr, s);
+                                })();
+                                //]]>
+                              </script>
                          </div>
                          <a href="<?php echo wl(); ?>" id="logo"></a>
                          <?php // <img src="<?p>images/logo.png" alt="Logo" width="249" height="89"></a> ?>
