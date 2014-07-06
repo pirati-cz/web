@@ -133,7 +133,7 @@
                                                   <li><a href="<?php echo wl('napoveda'); ?>"><i class=" icon-question-sign"></i>&nbsp;Nápověda</a></li>
                                              </ul>
                                         </li>
-                                        <li><a href="https://jappix.com/?r=diskuse@conference.pirati.cz"><i class="tplicon-chat"></i>&nbsp;Chat</a></li>
+                                        <li><a href="https://irc.pirati.cz/?channels=webchat"><i class="tplicon-chat"></i>&nbsp;Chat</a></li>
                                         <li><a href="https://forum.pirati.cz/"><i class="tplicon-forum"></i>&nbsp;Fórum</a></li>
                                         <li><a href="<?php echo wl('novinky') ?>"><i class="tplicon-news"></i>&nbsp;Novinky</a></li>
                                         <li class="dropdown">
