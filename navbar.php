@@ -32,7 +32,11 @@
                                                             <li class="dropdown-submenu">
                                                                  <a href="<?php echo wl('regiony'); ?>"><i class="icon-globe"></i>&nbsp;<?php echo $lang['regionals']; ?></a>
                                                                  <ul class="dropdown-menu">
-                                                                      <li><a href="<?php echo wl('regiony:jiznicechy'); ?>">KS Jihočeský kraj</a></li>
+                                                                      <li class="dropdown-submenu">
+                                                                           <a href="<?php echo wl('regiony:jiznicechy'); ?>">KS Jihočeský kraj</a></li>
+                                                                      	   <ul class="dropdown-menu">
+                                                                                <li><a href="<?php echo wl('regiony:jiznicechy:pisecko'); ?>">MS Písecko</a></li>
+                                                                           </ul>
                                                                       <li class="dropdown-submenu">
                                                                            <a href="<?php echo wl('regiony:jiznimorava'); ?>">KS Jihomoravský kraj</a>
                                                                            <ul class="dropdown-menu">
@@ -55,7 +59,6 @@
                                                                            <a href="<?php echo wl('regiony:moravskoslezsko'); ?>">KS Moravskoslezský kraj</a>
                                                                            <ul class="dropdown-menu">
                                                                                 <li><a href="<?php echo wl('regiony:moravskoslezsko:karvinsko'); ?>">MS Karvinsko</a></li>
-                                                                                <li><a href="<?php echo wl('regiony:moravskoslezsko:ostrava'); ?>">MS Ostrava</a></li>
                                                                                 <li><a href="<?php echo wl('regiony:moravskoslezsko:moravska_ostrava_privoz'); ?>">MS Moravská Ostrava a Přívoz</a></li>
                                                                            </ul>
                                                                       </li>
@@ -64,30 +67,46 @@
                                                                            <a href="<?php echo wl('regiony:plzensko'); ?>">KS Plzeňský kraj</a>
                                                                            <ul class="dropdown-menu">
                                                                                 <li><a href="<?php echo wl('regiony:plzensko:plzen'); ?>">MS Plzeň</a></li>
+                                                                                <li><a href="<?php echo wl('regiony:plzensko:tachovsko'); ?>">MS Tachovsko</a></li>
+                                                                                <li><a href="<?php echo wl('regiony:plzensko:rokycansko'); ?>">MS Rokycansko</a></li>
                                                                            </ul>
                                                                       </li>
                                                                       <li class="dropdown-submenu">
                                                                            <a href="<?php echo wl('regiony:praha'); ?>">KS Praha</a>
                                                                            <ul class="dropdown-menu">
-                                                                                <li><a href="#">Praha 7 a 8</a></li>
+                                                                                <li><a href="<?php echo wl('regiony:praha:radotin'); ?>">MS Radotín</a></li>
                                                                            </ul>
                                                                       </li>
-                                                                      <li><a href="<?php echo wl('regiony:olomoucko'); ?>">KS Olomoucký kraj</a></li>
+                                                                      <li class="dropdown-submenu">
+                                                                      	<a href="<?php echo wl('regiony:olomoucko'); ?>">KS Olomoucký kraj</a></li>
+									<ul class="dropdown-menu">
+                                                                                <li><a href="<?php echo wl('regiony:olomoucko:olomouc'); ?>">MS Olomouc</a></li>
+                                                                                <li><a href="<?php echo wl('regiony:olomoucko:piratska_tvrz'); ?>">MS Pirátská tvrz</a></li>
+                                                                                <li><a href="<?php echo wl('regiony:olomoucko:prostejov'); ?>">MS Prostějov</a></li>
+                                                                                <li><a href="<?php echo wl('regiony:olomoucko:prerov'); ?>">MS Přerov</a></li>
+                                                                           </ul>
                                                                       <li class="dropdown-submenu">
                                                                            <a href="<?php echo wl('regiony:strednicechy'); ?>">KS Středočeský kraj</a>
                                                                            <ul class="dropdown-menu">
                                                                                 <li><a href="<?php echo wl('regiony:strednicechy:nymburk'); ?>">MS Nymburk</a></li>
-                                                                 </ul>
-                                                            </li>
-                                                            <li class="dropdown-submenu">
-                                                                 <a href="<?php echo wl('regiony:ustecko'); ?>">KS Ústecký kraj</a>
-                                                                 <ul class="dropdown-menu">
-                                                                      <li><a href="<?php echo wl('regiony:ustecko:zatec'); ?>">MS Žatec</a></li>
-                                                                 </ul>
-                                                            </li>
-                                                            <li><a href="<?php echo wl('regiony:vysocina'); ?>">KS Vysočina</a></li>
-                                                            <li><a href="<?php echo wl('regiony:zlinsko'); ?>">KS Zlínský kraj</a></li>
-                                                       </ul>
+                                                                                <li><a href="<?php echo wl('regiony:strednicechy:pribram'); ?>">MS Příbram</a></li>
+                                                                                <li><a href="<?php echo wl('regiony:strednicechy:kralupy'); ?>">MS Kralupy nad Vltavou</a></li>
+                                                                           </ul>
+								       </li>
+							               <li class="dropdown-submenu">
+								           <a href="<?php echo wl('regiony:ustecko'); ?>">KS Ústecký kraj</a>
+									   <ul class="dropdown-menu">
+										<li><a href="<?php echo wl('regiony:ustecko:zatec'); ?>">MS Žatec</a></li>
+										<li><a href="<?php echo wl('regiony:ustecko:decin'); ?>">MS Děčín</a></li>
+									   </ul>
+								       </li>
+								       <li><a href="<?php echo wl('regiony:vysocina'); ?>">KS Vysočina</a></li>
+								  	 <li class="dropdown-submenu">
+									   <a href="<?php echo wl('regiony:zlinsko'); ?>">KS Zlínský kraj</a></li>
+									   <ul class="dropdown-menu">
+									     <li><a href="<?php echo wl('regiony:zlinsko:pirati_vsetin'); ?>">MS Piráti Vsetín</a></li>
+									  </ul>
+								</ul>
                                                   </li>
                                              </ul>
                                         </li>
