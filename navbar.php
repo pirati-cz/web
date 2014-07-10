@@ -33,11 +33,12 @@
                                                                  <a href="<?php echo wl('regiony'); ?>"><i class="icon-globe"></i>&nbsp;<?php echo $lang['regionals']; ?></a>
                                                                  <ul class="dropdown-menu">
                                                                       <li class="dropdown-submenu">
-                                                                           <a href="<?php echo wl('regiony:jiznicechy'); ?>">KS Jihočeský kraj</a></li>
+                                                                           <a href="<?php echo wl('regiony:jiznicechy'); ?>">KS Jihočeský kraj</a>
                                                                       	   <ul class="dropdown-menu">
                                                                                 <li><a href="<?php echo wl('regiony:jiznicechy:pisecko'); ?>">MS Písecko</a></li>
                                                                            </ul>
-                                                                      <li class="dropdown-submenu">
+                                                                      </li>
+                                                                           <li class="dropdown-submenu">
                                                                            <a href="<?php echo wl('regiony:jiznimorava'); ?>">KS Jihomoravský kraj</a>
                                                                            <ul class="dropdown-menu">
                                                                                 <li><a href="<?php echo wl('regiony:jiznimorava:slovacko'); ?>">MS Slovácko</a></li>
@@ -78,13 +79,14 @@
                                                                            </ul>
                                                                       </li>
                                                                       <li class="dropdown-submenu">
-                                                                      	<a href="<?php echo wl('regiony:olomoucko'); ?>">KS Olomoucký kraj</a></li>
+                                                                      	<a href="<?php echo wl('regiony:olomoucko'); ?>">KS Olomoucký kraj</a>
 									<ul class="dropdown-menu">
                                                                                 <li><a href="<?php echo wl('regiony:olomoucko:olomouc'); ?>">MS Olomouc</a></li>
                                                                                 <li><a href="<?php echo wl('regiony:olomoucko:piratska_tvrz'); ?>">MS Pirátská tvrz</a></li>
                                                                                 <li><a href="<?php echo wl('regiony:olomoucko:prostejov'); ?>">MS Prostějov</a></li>
                                                                                 <li><a href="<?php echo wl('regiony:olomoucko:prerov'); ?>">MS Přerov</a></li>
                                                                            </ul>
+                                                                      </li>     
                                                                       <li class="dropdown-submenu">
                                                                            <a href="<?php echo wl('regiony:strednicechy'); ?>">KS Středočeský kraj</a>
                                                                            <ul class="dropdown-menu">
@@ -102,10 +104,11 @@
 								       </li>
 								       <li><a href="<?php echo wl('regiony:vysocina'); ?>">KS Vysočina</a></li>
 								  	 <li class="dropdown-submenu">
-									   <a href="<?php echo wl('regiony:zlinsko'); ?>">KS Zlínský kraj</a></li>
+									   <a href="<?php echo wl('regiony:zlinsko'); ?>">KS Zlínský kraj</a>
 									   <ul class="dropdown-menu">
 									     <li><a href="<?php echo wl('regiony:zlinsko:pirati_vsetin'); ?>">MS Piráti Vsetín</a></li>
 									  </ul>
+									</li>  
 								</ul>
                                                   </li>
                                              </ul>
