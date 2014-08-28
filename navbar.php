@@ -204,7 +204,7 @@
                                                             <li><a href="https://twitter.com/pirati_stc" target="_blank"><i class="tplicon-twitter"></i>&nbsp;Středočeský kraj</a></li>
                                                        </ul> 
                                                   </li>
-                                                  <li><a href="https://plus.google.com/102273861916995533911/posts" target="_blank"><i class="tplicon-gplus"></i>&nbsp;Google</a></li>
+                                                  <li><a href="https://plus.google.com/+piratskastrana/posts" target="_blank"><i class="tplicon-gplus"></i>&nbsp;Google</a></li>
                                              </ul>
                                         </li>
                                    </ul>
