@@ -436,9 +436,27 @@
         <li>
         <a href="https://plus.google.com/+piratskastrana/posts" target="_blank">
           <i class="tplicon-gplus"></i>&nbsp;Google</a>
-        </li>                                             
+        </li>                                           
         </ul>                                        
-        </li>                                   
+        </li> 
+        
+        <li class="dropdown">                                             
+          <a href="#transparence" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="tplicon-web"></i>&nbsp;Transparence
+            <b class="caret"></b></a>                                             
+          <ul class="dropdown-menu">                                                  
+            <li>
+            <a href="http://smlouvy.pirati.cz">&nbsp;Registr smluv</a>
+			</li>
+			<li>
+            <a href="http://evidence.pirati.cz">&nbsp;Evidence lobistickych kontaktu</a>
+			</li>
+			<li>
+            <a href="http://pirati.cz/fo">&nbsp;Otevrene ucetnictvi</a>
+			</li>
+		  </ul>
+		</li>  	 
+                                          
         </ul>                                   
         <ul class="nav pull-right">
 <?php /*
