@@ -298,10 +298,6 @@
         </ul>                                        
         </li>                                        
         <li>
-        <a href="https://irc.pirati.cz/?channels=webchat">
-          <i class="tplicon-chat"></i>&nbsp;Chat</a>
-        </li>                                        
-        <li>
         <a href="https://forum.pirati.cz/">
           <i class="tplicon-forum"></i>&nbsp;Fórum</a>
         </li>                                        
@@ -454,6 +450,12 @@
 			<li>
             <a href="http://pirati.cz/fo">&nbsp;Otevrene ucetnictvi</a>
 			</li>
+			<li>
+            <a href="https://forum.pirati.cz/povinne-zverejnovane-informace-f608/">&nbsp;Odpovedi na dotazy dle z. c. 106</a>
+			</li>
+			<li>
+            <a href="http://www.pirati.cz/info/start">&nbsp;Povinne zverejnovane informace</a>
+			</li>			
 		  </ul>
 		</li>  	 
                                           
